@@ -1,0 +1,1083 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Camino | Orientación para estudiantes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo-ipr.png" alt="Logo Instituto Privado Rivadavia" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-title">Tu Camino</span>
+                <span class="logo-subtitle">INSTITUTO PRIVADO RIVADAVIA · Alderetes, Tucumán</span>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#estudiar">Qué estudiar</a>
+            <a href="#explorar">Explorar</a>
+            <a href="#elegir">Cómo elegir</a>
+            <a href="#ia">Asistente IA</a>
+        </nav>
+        <button class="menu-btn" onclick="abrirMenu()">
+            ☰
+        </button>
+    </header>
+    <!-- ================= MAIN ================= -->
+    <main>
+        <!-- ================= INICIO ================= -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <p class="hero-small">
+                    ORIENTACIÓN PARA ESTUDIANTES
+                </p>
+                <h1>
+                    Tu futuro
+                    <span>empieza hoy.</span>
+                </h1>
+                <p class="hero-text">
+                    Explorá carreras, tecnicaturas, cursos y oficios.
+                    Descubrí diferentes caminos y empezá a pensar
+                    qué te gustaría hacer después de la secundaria.
+                </p>
+                <div class="hero-buttons">
+                    <a
+                        href="#estudiar"
+                        class="btn btn-primary">
+                        Explorar opciones
+                    </a>
+                    <a
+                        href="#ia"
+                        class="btn btn-secondary">
+                        Conocer el asistente
+                    </a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <img src="logo-ipr.png" alt="Instituto Privado Rivadavia" class="hero-logo">
+                <h3>
+                    ¿Todavía no sabés qué estudiar?
+                </h3>
+                <p>
+                    No hay problema. Explorar también es
+                    parte de elegir.
+                </p>
+            </div>
+        </section>
+        <!-- ================= QUÉ PUEDO ESTUDIAR ================= -->
+        <section
+            id="estudiar"
+            class="section">
+            <div class="section-title">
+                <p class="section-label">
+                    EXPLORÁ
+                </p>
+                <h2>
+                    ¿Qué puedo estudiar?
+                </h2>
+                <p>
+                    Conocé diferentes áreas y descubrí
+                    las opciones que existen dentro de cada una.
+                </p>
+            </div>
+            <div class="categories">
+                <!-- TECNOLOGÍA -->
+                <article
+                    class="category-card"
+                    onclick="mostrarOpciones('tecnologia')">
+                    <div class="category-icon">
+                        💻
+                    </div>
+                    <h3>
+                        Tecnología
+                    </h3>
+                    <p>
+                        Informática, programación, robótica,
+                        inteligencia artificial y más.
+                    </p>
+                    <span>
+                        Ver opciones →
+                    </span>
+                </article>
+                <!-- SALUD -->
+                <article
+                    class="category-card"
+                    onclick="mostrarOpciones('salud')">
+                    <div class="category-icon">
+                        🩺
+                    </div>
+                    <h3>
+                        Salud
+                    </h3>
+                    <p>
+                        Medicina, enfermería, nutrición,
+                        kinesiología y otras áreas.
+                    </p>
+                    <span>
+                        Ver opciones →
+                    </span>
+                </article>
+                <!-- ARTE -->
+                <article
+                    class="category-card"
+                    onclick="mostrarOpciones('arte')">
+                    <div class="category-icon">
+                        🎨
+                    </div>
+                    <h3>
+                        Arte y Diseño
+                    </h3>
+                    <p>
+                        Diseño gráfico, fotografía,
+                        música, audiovisual y más.
+                    </p>
+                    <span>
+                        Ver opciones →
+                    </span>
+                </article>
+                <!-- INGENIERÍA -->
+                <article
+                    class="category-card"
+                    onclick="mostrarOpciones('ingenieria')">
+                    <div class="category-icon">
+                        🏗️
+                    </div>
+                    <h3>
+                        Ingeniería
+                    </h3>
+                    <p>
+                        Construcción, electrónica,
+                        mecánica, energía y tecnología.
+                    </p>
+                    <span>
+                        Ver opciones →
+                    </span>
+                </article>
+                <!-- SOCIALES -->
+                <article
+                    class="category-card"
+                    onclick="mostrarOpciones('sociales')">
+                    <div class="category-icon">
+                        ⚖️
+                    </div>
+                    <h3>
+                        Sociales y Derecho
+                    </h3>
+                    <p>
+                        Derecho, comunicación, psicología,
+                        sociología y otras áreas.
+                    </p>
+                    <span>
+                        Ver opciones →
+                    </span>
+                </article>
+                <!-- ECONOMÍA -->
+                <article
+                    class="category-card"
+                    onclick="mostrarOpciones('economia')">
+                    <div class="category-icon">
+                        📊
+                    </div>
+                    <h3>
+                        Economía y Negocios
+                    </h3>
+                    <p>
+                        Administración, contabilidad,
+                        economía, marketing y negocios.
+                    </p>
+                    <span>
+                        Ver opciones →
+                    </span>
+                </article>
+                <!-- EDUCACIÓN -->
+                <article
+                    class="category-card"
+                    onclick="mostrarOpciones('educacion')">
+                    <div class="category-icon">
+                        📚
+                    </div>
+                    <h3>
+                        Educación
+                    </h3>
+                    <p>
+                        Profesorados, educación inicial,
+                        primaria y otras especialidades.
+                    </p>
+                    <span>
+                        Ver opciones →
+                    </span>
+                </article>
+                <!-- OFICIOS -->
+                <article
+                    class="category-card"
+                    onclick="mostrarOpciones('oficios')">
+                    <div class="category-icon">
+                        🔧
+                    </div>
+                    <h3>
+                        Oficios
+                    </h3>
+                    <p>
+                        Electricidad, mecánica, carpintería,
+                        gastronomía y formación técnica.
+                    </p>
+                    <span>
+                        Ver opciones →
+                    </span>
+                </article>
+            </div>
+        </section>
+        <!-- ================= EXPLORAR ================= -->
+        <section
+            id="explorar"
+            class="options-section">
+            <div class="section-title">
+                <p class="section-label">
+                    DESCUBRÍ
+                </p>
+                <h2>
+                    Explorá una categoría
+                </h2>
+                <p>
+                    Elegí un área para conocer algunas
+                    de las opciones disponibles.
+                </p>
+            </div>
+            <div
+                id="options-container"
+                class="options-container">
+                <div class="empty-options">
+                    <div>
+                        ✦
+                    </div>
+                    <h3>
+                        Elegí un área para comenzar
+                    </h3>
+                    <p>
+                        Tocá cualquiera de las categorías
+                        de arriba para ver opciones.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ================= CÓMO ELEGIR ================= -->
+        <section
+            id="elegir"
+            class="choose-section">
+            <div class="choose-content">
+                <p class="section-label">
+                    TU FUTURO
+                </p>
+                <h2>
+                    Elegir qué estudiar lleva tiempo.
+                </h2>
+                <p>
+                    No tenés que tener toda tu vida decidida
+                    ahora. Lo importante es conocer tus
+                    posibilidades, buscar información y
+                    descubrir qué caminos existen.
+                </p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">
+                        01
+                    </div>
+                    <h3>
+                        Conocé
+                    </h3>
+                    <p>
+                        Investigá carreras, tecnicaturas,
+                        cursos y oficios.
+                    </p>
+                </div>
+                <div class="step">
+                    <div class="step-number">
+                        02
+                    </div>
+                    <h3>
+                        Explorá
+                    </h3>
+                    <p>
+                        Descubrí qué se hace en cada
+                        profesión y dónde se puede trabajar.
+                    </p>
+                </div>
+                <div class="step">
+                    <div class="step-number">
+                        03
+                    </div>
+                    <h3>
+                        Preguntá
+                    </h3>
+                    <p>
+                        Buscá información y consultá tus
+                        dudas antes de decidir.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- ================= ASISTENTE IA ================= -->
+        <section
+            id="ia"
+            class="ia-section">
+            <div class="ia-box">
+                <div class="ia-icon">
+                    ✦
+                </div>
+                <div
+                    class="ia-content"
+                    style="width:100%;">
+                    <p class="section-label">
+                        ASISTENTE VIRTUAL
+                    </p>
+                    <h2>
+                        Tu Camino IA
+                    </h2>
+                    <p>
+                        Preguntá sobre carreras, tecnicaturas,
+                        cursos, oficios y opciones de estudio.
+                    </p>
+                    <!-- CHAT -->
+                    <div
+                        id="chat-box"
+                        style="
+                            width:100%;
+                            max-width:900px;
+                            margin-top:30px;
+                            padding:22px;
+                            background:#ffffff;
+                            border:1px solid #dddddd;
+                            border-radius:20px;
+                            box-sizing:border-box;
+                        ">
+                        <!-- MENSAJES -->
+                        <div
+                            id="chat-messages"
+                            style="
+                                width:100%;
+                                height:500px;
+                                overflow-y:auto;
+                                padding:15px;
+                                box-sizing:border-box;
+                                margin-bottom:18px;
+                                border-radius:16px;
+                                background:#fafafa;
+                                border:1px solid #eeeeee;
+                            ">
+                        </div>
+                        <!-- FORMULARIO -->
+                        <form
+                            id="chat-form"
+                            style="
+                                width:100%;
+                                display:flex;
+                                gap:12px;
+                                box-sizing:border-box;
+                            ">
+                            <input
+                                type="text"
+                                id="chat-input"
+                                placeholder="Escribí tu pregunta..."
+                                autocomplete="off"
+                                maxlength="1000"
+                                style="
+                                    flex:1;
+                                    min-width:0;
+                                    padding:16px;
+                                    border:1px solid #cccccc;
+                                    border-radius:14px;
+                                    font-size:16px;
+                                    box-sizing:border-box;
+                                    outline:none;
+                                ">
+                            <button
+                                type="submit"
+                                id="chat-submit"
+                                class="btn btn-primary"
+                                style="
+                                    border:none;
+                                    cursor:pointer;
+                                    padding:0 25px;
+                                ">
+                                Enviar
+                            </button>
+                        </form>
+                        <!-- ESTADO -->
+                        <div
+                            id="chat-status"
+                            style="
+                                margin-top:12px;
+                                font-size:14px;
+                                opacity:0.7;
+                                min-height:20px;
+                            ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="logo-ipr.png" alt="Logo IPR" class="footer-logo-img">
+            <span>Tu Camino</span>
+        </div>
+        <p>
+            Un espacio para explorar opciones y pensar en tu futuro.
+        </p>
+        <div class="footer-line"></div>
+        <p class="copyright">
+            Instituto Privado Rivadavia · Alderetes, Tucumán · Proyecto educativo
+        </p>
+    </footer>
+    <!-- =====================================================
+         JAVASCRIPT
+         ===================================================== -->
+    <script>
+        /* =====================================================
+           MENÚ
+        ===================================================== */
+        function abrirMenu() {
+            const nav =
+                document.querySelector(".nav");
+            if (nav) {
+                nav.classList.toggle("active");
+            }
+        }
+        /* =====================================================
+           OPCIONES DE ESTUDIO
+        ===================================================== */
+        const opciones = {
+            tecnologia: {
+                titulo:
+                    "Tecnología e Informática",
+                carreras: [
+                    { nombre: "Programación", descripcion: "Se estudian algoritmos, lenguajes de programación y resolución de problemas. Podés desarrollar aplicaciones, sistemas para empresas o trabajar en proyectos de software." },
+            { nombre: "Desarrollo Web", descripcion: "Se aprende HTML, CSS, JavaScript, bases de datos y diseño de sitios accesibles. Podés crear páginas, tiendas en línea y aplicaciones web." },
+            { nombre: "Inteligencia Artificial", descripcion: "Se estudian programación, datos, matemática y modelos que reconocen patrones. Podés participar en proyectos de automatización, análisis de datos y soluciones inteligentes." },
+            { nombre: "Robótica", descripcion: "Combina electrónica, mecánica, sensores y programación. Podés diseñar, construir y mantener robots o sistemas automatizados." },
+            { nombre: "Ciberseguridad", descripcion: "Se aprende sobre redes, sistemas, prevención de ataques y protección de información. Podés colaborar en la seguridad de organizaciones y servicios digitales." },
+            { nombre: "Desarrollo de Videojuegos", descripcion: "Se estudian programación, diseño de mecánicas, gráficos y pruebas. Podés crear juegos para computadoras, celulares y otras plataformas." },
+            { nombre: "Redes Informáticas", descripcion: "Se estudia cómo se conectan computadoras, servidores y dispositivos. Podés instalar, administrar y mantener redes en empresas e instituciones." },
+            { nombre: "Análisis de Sistemas", descripcion: "Se aprende a investigar necesidades, diseñar soluciones y organizar proyectos informáticos. Podés participar en el desarrollo y mejora de sistemas de gestión." }
+                ]
+            },
+            salud: {
+                titulo:
+                    "Salud",
+                carreras: [
+                    { nombre: "Medicina", descripcion: "Se estudian anatomía, fisiología, enfermedades, prevención y atención de pacientes. Los médicos trabajan en hospitales, centros de salud y consultorios, según su formación." },
+            { nombre: "Enfermería", descripcion: "Se estudian cuidados de salud, primeros auxilios, procedimientos clínicos y acompañamiento de pacientes. Podés trabajar en hospitales, clínicas y atención comunitaria." },
+            { nombre: "Nutrición", descripcion: "Se estudian alimentación, metabolismo y hábitos saludables. Podés orientar planes alimentarios y trabajar en salud, educación o servicios de alimentación." },
+            { nombre: "Kinesiología", descripcion: "Se estudian movimiento corporal, anatomía, rehabilitación y ejercicio terapéutico. Podés trabajar en recuperación física, prevención y atención de pacientes." },
+            { nombre: "Odontología", descripcion: "Se estudian salud bucal, prevención y tratamiento de problemas dentales. Podés desempeñarte en consultorios y centros de salud." },
+            { nombre: "Veterinaria", descripcion: "Se estudian anatomía animal, enfermedades, prevención y bienestar de los animales. Podés trabajar en clínicas veterinarias, producción animal o salud pública." },
+            { nombre: "Bioquímica", descripcion: "Se estudian química, biología y análisis de muestras. Podés trabajar en laboratorios clínicos, investigación y control de calidad." },
+            { nombre: "Farmacia", descripcion: "Se estudian medicamentos, química y su uso seguro. Podés trabajar en farmacias, hospitales, laboratorios e industria farmacéutica." }
+                ]
+            },
+            arte: {
+                titulo:
+                    "Arte y Diseño",
+                carreras: [
+                    { nombre: "Diseño Gráfico", descripcion: "Se estudian composición, tipografía, identidad visual y herramientas digitales. Podés diseñar piezas para marcas, publicaciones y campañas." },
+            { nombre: "Diseño Audiovisual", descripcion: "Se estudian guion, filmación, sonido y edición. Podés participar en la producción de videos, documentales y contenidos digitales." },
+            { nombre: "Fotografía", descripcion: "Se estudian iluminación, composición, técnicas de cámara y edición. Podés trabajar en fotografía social, publicitaria, documental o artística." },
+            { nombre: "Diseño de Indumentaria", descripcion: "Se estudian textiles, moldería, tendencias y producción de prendas. Podés diseñar colecciones o emprender una marca propia." },
+            { nombre: "Música", descripcion: "Se estudian interpretación, teoría musical, composición y producción. Podés dedicarte a la docencia, interpretación, grabación o creación musical." },
+            { nombre: "Animación", descripcion: "Se estudian dibujo, movimiento, narrativa y herramientas digitales. Podés crear animaciones para publicidad, cine, videojuegos y redes." },
+            { nombre: "Periodismo", descripcion: "Se estudian investigación, redacción, entrevistas y comunicación en distintos medios. Podés producir contenidos para radio, prensa, televisión y plataformas digitales." },
+            { nombre: "Publicidad", descripcion: "Se estudian creatividad, comunicación, campañas y comportamiento del público. Podés trabajar en agencias, marcas o proyectos de comunicación." }
+
+                ]
+            },
+            ingenieria: {
+                titulo:
+                    "Ingeniería y Construcción",
+                carreras: [
+                   { nombre: "Ingeniería Informática", descripcion: "Se estudian programación, sistemas, redes y matemática. Podés diseñar soluciones tecnológicas y participar en proyectos de software e infraestructura." },
+            { nombre: "Ingeniería Electrónica", descripcion: "Se estudian circuitos, señales, automatización y dispositivos electrónicos. Podés diseñar o mantener equipos y sistemas de control." },
+            { nombre: "Ingeniería Mecánica", descripcion: "Se estudian física, materiales, máquinas y procesos de fabricación. Podés trabajar en diseño, mantenimiento e industria." },
+            { nombre: "Ingeniería Civil", descripcion: "Se estudian estructuras, materiales, obras y planificación. Podés participar en proyectos de caminos, edificios y otras infraestructuras." },
+            { nombre: "Arquitectura", descripcion: "Se estudian diseño espacial, construcción, dibujo técnico y urbanismo. Podés proyectar edificios, viviendas y espacios públicos." },
+            { nombre: "Ingeniería Industrial", descripcion: "Se estudian procesos, organización, producción y calidad. Podés mejorar sistemas de trabajo en industrias y servicios." },
+            { nombre: "Ingeniería Ambiental", descripcion: "Se estudian agua, residuos, contaminación y gestión de recursos. Podés colaborar en proyectos de prevención y cuidado ambiental." },
+            { nombre: "Agronomía", descripcion: "Se estudian suelos, cultivos, producción agropecuaria y ambiente. Podés trabajar en asesoramiento técnico, producción e investigación agrícola." }
+                ]
+            },
+            sociales: {
+                titulo:
+                    "Ciencias Sociales y Derecho",
+                carreras: [
+                    { nombre: "Abogacía", descripcion: "Se estudian leyes, derechos, instituciones y procedimientos jurídicos. Podés asesorar, representar personas o trabajar en organismos públicos y privados." },
+            { nombre: "Psicología", descripcion: "Se estudian conducta, emociones, aprendizaje y relaciones humanas. Podés trabajar en salud, educación, organizaciones y otros ámbitos según tu formación." },
+            { nombre: "Comunicación", descripcion: "Se estudian medios, mensajes, producción de contenidos y comunicación institucional. Podés trabajar en medios, organizaciones y proyectos digitales." },
+            { nombre: "Sociología", descripcion: "Se estudian grupos humanos, desigualdades y cambios sociales. Podés investigar, analizar información y participar en proyectos sociales." },
+            { nombre: "Ciencia Política", descripcion: "Se estudian instituciones, políticas públicas y sistemas de gobierno. Podés trabajar en investigación, gestión pública y análisis político." },
+            { nombre: "Trabajo Social", descripcion: "Se estudian problemáticas sociales, derechos e intervención comunitaria. Podés acompañar personas y comunidades desde instituciones y programas sociales." },
+            { nombre: "Formación Policial y Seguridad Pública", descripcion: "Se estudian prevención, normativa, procedimientos, convivencia y actuación ante emergencias. La formación y el ingreso dependen de los requisitos de la institución policial correspondiente." },
+            { nombre: "Criminalística", descripcion: "Se estudian indicios, documentación de escenas, técnicas de laboratorio e investigación de hechos. Podés colaborar en peritajes y áreas de investigación según el título y las habilitaciones." }
+                ]
+            },
+            economia: {
+                titulo:
+                    "Economía y Negocios",
+                carreras: [
+                    { nombre: "Administración", descripcion: "Se estudian planificación, organización, finanzas y gestión. Podés coordinar actividades en empresas, organizaciones o emprendimientos." },
+            { nombre: "Contabilidad", descripcion: "Se estudian registros contables, impuestos, costos y estados financieros. Podés trabajar en estudios contables y áreas administrativas, según tu título." },
+            { nombre: "Economía", descripcion: "Se estudian mercados, producción, consumo y políticas económicas. Podés realizar análisis e investigación en organizaciones públicas o privadas." },
+            { nombre: "Marketing", descripcion: "Se estudian consumidores, estrategias comerciales, comunicación y análisis de mercado. Podés trabajar en marcas, agencias y emprendimientos." },
+            { nombre: "Comercio", descripcion: "Se estudian ventas, logística, negociación y mercados. Podés desempeñarte en empresas comerciales y actividades de importación o exportación." },
+            { nombre: "Recursos Humanos", descripcion: "Se estudian selección, capacitación y organización del trabajo. Podés participar en la gestión de personal en empresas e instituciones." },
+            { nombre: "Turismo", descripcion: "Se estudian destinos, patrimonio, planificación de viajes y atención al visitante. Podés trabajar en agencias, servicios turísticos y gestión de experiencias." },
+            { nombre: "Hotelería", descripcion: "Se estudian recepción, alojamiento, organización de servicios y atención al cliente. Podés trabajar en hoteles, hospedajes y establecimientos turísticos." }
+                ]
+            },
+            educacion: {
+                titulo:
+                    "Educación",
+                carreras: [
+                     { nombre: "Profesorado de Educación Inicial", descripcion: "Se estudian desarrollo infantil, enseñanza, juego y planificación. Podés enseñar en jardines de infantes y otros espacios de primera infancia según tu título." },
+            { nombre: "Profesorado de Educación Primaria", descripcion: "Se estudian didáctica, alfabetización, matemática y planificación escolar. Podés enseñar en escuelas primarias." },
+            { nombre: "Profesorado de Educación Secundaria", descripcion: "Se estudian contenidos de una especialidad, pedagogía y estrategias de enseñanza. Podés enseñar la materia correspondiente a tu título." },
+            { nombre: "Educación Especial", descripcion: "Se estudian inclusión, accesibilidad y estrategias de apoyo educativo. Podés acompañar procesos de enseñanza en diferentes contextos." },
+            { nombre: "Ciencias de la Educación", descripcion: "Se estudian teorías del aprendizaje, instituciones y políticas educativas. Podés participar en investigación, asesoramiento y planificación educativa." },
+            { nombre: "Educación Física", descripcion: "Se estudian anatomía, deportes, movimiento, didáctica y actividad física. Podés enseñar Educación Física y desarrollar propuestas deportivas y recreativas según tu formación." },
+            { nombre: "Entrenamiento Deportivo", descripcion: "Se estudian preparación física, planificación de entrenamientos y rendimiento. Podés acompañar procesos de entrenamiento en clubes y espacios deportivos según tu certificación." },
+            { nombre: "Psicopedagogía", descripcion: "Se estudian procesos de aprendizaje y dificultades que pueden aparecer al aprender. Podés trabajar en orientación y acompañamiento educativo según el título obtenido." }
+                ]
+            },
+            oficios: {
+                titulo:
+                    "Oficios y Formación Técnica",
+                carreras: [
+                   { nombre: "Electricidad", descripcion: "Se aprende a instalar, revisar y mantener circuitos e instalaciones eléctricas. Podés trabajar en viviendas, comercios y mantenimiento, con la habilitación que corresponda." },
+            { nombre: "Mecánica", descripcion: "Se estudian motores, herramientas, diagnóstico y reparación. Podés trabajar en talleres, mantenimiento de vehículos o maquinaria." },
+            { nombre: "Carpintería", descripcion: "Se aprende a medir, cortar, ensamblar y terminar piezas de madera. Podés fabricar muebles, realizar instalaciones o emprender." },
+            { nombre: "Gastronomía", descripcion: "Se estudian técnicas de cocina, higiene alimentaria, organización y elaboración de platos. Podés trabajar en restaurantes, servicios de catering o emprendimientos." },
+            { nombre: "Refrigeración", descripcion: "Se aprende instalación, diagnóstico y mantenimiento de equipos de frío y aire acondicionado. Podés trabajar en servicios técnicos y mantenimiento." },
+            { nombre: "Soldadura", descripcion: "Se estudian materiales, seguridad y técnicas de unión de metales. Podés trabajar en talleres, construcción e industria." },
+            { nombre: "Peluquería y Barbería", descripcion: "Se aprenden técnicas de corte, peinado, cuidado capilar e higiene. Podés trabajar en salones o desarrollar un emprendimiento." },
+            { nombre: "Pastelería y Panadería", descripcion: "Se estudian masas, elaboración, conservación e higiene de alimentos. Podés trabajar en panaderías, pastelerías o emprendimientos propios." }
+
+                ]
+            }
+        };
+        /* =====================================================
+           MOSTRAR OPCIONES
+        ===================================================== */
+        function mostrarOpciones(categoria) {
+            const contenedor =
+                document.getElementById(
+                    "options-container"
+                );
+            const datos =
+                opciones[categoria];
+            if (!contenedor || !datos) {
+                return;
+            }
+            let html = `
+                <h3 class="options-title">
+                    ${datos.titulo}
+                </h3>
+                <div class="options-grid">
+            `;
+            datos.carreras.forEach(
+                function(carrera) {
+                    html += `
+                        <article class="option-card">
+                            <h3>
+                                ${carrera.nombre}
+                            </h3>
+                            <p>
+                                ${carrera.descripcion}
+                            </p>
+                        </article>
+                    `;
+                }
+            );
+            html += `
+                </div>
+            `;
+            contenedor.innerHTML =
+                html;
+            const explorar =
+                document.getElementById(
+                    "explorar"
+                );
+            if (explorar) {
+                explorar.scrollIntoView({
+                    behavior:
+                        "smooth"
+                });
+            }
+        }
+        /* =====================================================
+           CONFIGURACIÓN DEL WORKER
+        ===================================================== */
+        const URL_IA =
+            "https://tu-camino-ia.wmalbarracin243.workers.dev";
+        /* =====================================================
+           HISTORIAL
+        ===================================================== */
+        let historialChat = [];
+        /* =====================================================
+           AGREGAR MENSAJE
+        ===================================================== */
+        function agregarMensaje(
+            texto,
+            tipo
+        ) {
+            const contenedor =
+                document.getElementById(
+                    "chat-messages"
+                );
+            if (!contenedor) {
+                return;
+            }
+            const mensaje =
+                document.createElement(
+                    "div"
+                );
+            mensaje.style.padding =
+                "14px 18px";
+            mensaje.style.borderRadius =
+                "16px";
+            mensaje.style.marginBottom =
+                "12px";
+            mensaje.style.maxWidth =
+                "90%";
+            mensaje.style.lineHeight =
+                "1.6";
+            mensaje.style.overflowX =
+                "auto";
+            if (
+                tipo ===
+                "usuario"
+            ) {
+                mensaje.style.marginLeft =
+                    "auto";
+                mensaje.style.background =
+                    "#eeeeee";
+                mensaje.textContent =
+                    texto;
+            }
+            else {
+                mensaje.style.marginRight =
+                    "auto";
+                mensaje.style.background =
+                    "#e9eef5";
+                mensaje.innerHTML =
+                    formatearRespuesta(
+                        texto
+                    );
+            }
+            contenedor.appendChild(
+                mensaje
+            );
+            contenedor.scrollTop =
+                contenedor.scrollHeight;
+        }
+        /* =====================================================
+           FORMATEAR RESPUESTA DE GEMINI
+        ===================================================== */
+        function formatearRespuesta(
+            texto
+        ) {
+            let html =
+                texto
+                    .replace(
+                        /&/g,
+                        "&"
+                    )
+                    .replace(
+                        /</g,
+                        "<"
+                    )
+                    .replace(
+                        />/g,
+                        ">"
+                    );
+            /* Negritas */
+            html =
+                html.replace(
+                    /\*\*(.*?)\*\*/g,
+                    "<strong>$1</strong>"
+                );
+            /* Títulos ### */
+            html =
+                html.replace(
+                    /^### (.*)$/gm,
+                    "<h4 style='margin:16px 0 8px;'>$1</h4>"
+                );
+            /* Títulos ## */
+            html =
+                html.replace(
+                    /^## (.*)$/gm,
+                    "<h3 style='margin:18px 0 8px;'>$1</h3>"
+                );
+            /* Listas */
+            html =
+                html.replace(
+                    /^\s*[-*]\s+(.*)$/gm,
+                    "<li>$1</li>"
+                );
+            /* Tablas */
+            const lineas =
+                html.split("\n");
+            let resultado =
+                [];
+            let i = 0;
+            while (
+                i <
+                lineas.length
+            ) {
+                if (
+                    lineas[i].includes("|") &&
+                    i + 1 <
+                    lineas.length &&
+                    lineas[i + 1]
+                        .replace(/\s/g, "")
+                        .includes("|---")
+                ) {
+                    const encabezados =
+                        lineas[i]
+                            .split("|")
+                            .map(
+                                function(celda) {
+                                    return celda.trim();
+                                }
+                            )
+                            .filter(
+                                function(celda) {
+                                    return celda !== "";
+                                }
+                            );
+                    i += 2;
+                    let tabla = `
+                        <div style="
+                            overflow-x:auto;
+                            margin:15px 0;
+                        ">
+                        <table style="
+                            width:100%;
+                            border-collapse:collapse;
+                            background:white;
+                            border-radius:10px;
+                            overflow:hidden;
+                        ">
+                        <thead>
+                            <tr>
+                    `;
+                    encabezados.forEach(
+                        function(encabezado) {
+                            tabla += `
+                                <th style="
+                                    border:1px solid #ddd;
+                                    padding:10px;
+                                    text-align:left;
+                                    background:#f1f1f1;
+                                ">
+                                    ${encabezado}
+                                </th>
+                            `;
+                        }
+                    );
+                    tabla += `
+                            </tr>
+                        </thead>
+                        <tbody>
+                    `;
+                    while (
+                        i <
+                        lineas.length &&
+                        lineas[i].includes("|")
+                    ) {
+                        const celdas =
+                            lineas[i]
+                                .split("|")
+                                .map(
+                                    function(celda) {
+                                        return celda.trim();
+                                    }
+                                )
+                                .filter(
+                                    function(celda) {
+                                        return celda !== "";
+                                    }
+                                );
+                        tabla +=
+                            "<tr>";
+                        celdas.forEach(
+                            function(celda) {
+                                tabla += `
+                                    <td style="
+                                        border:1px solid #ddd;
+                                        padding:10px;
+                                        vertical-align:top;
+                                    ">
+                                        ${celda}
+                                    </td>
+                                `;
+                            }
+                        );
+                        tabla +=
+                            "</tr>";
+                        i++;
+                    }
+                    tabla += `
+                        </tbody>
+                        </table>
+                        </div>
+                    `;
+                    resultado.push(
+                        tabla
+                    );
+                }
+                else {
+                    resultado.push(
+                        lineas[i]
+                    );
+                    i++;
+                }
+            }
+            html =
+                resultado.join("\n");
+            /* Separadores */
+            html =
+                html.replace(
+                    /^---$/gm,
+                    "<hr style='border:none;border-top:1px solid #ddd;margin:18px 0;'>"
+                );
+            /* Saltos */
+            html =
+                html.replace(
+                    /\n/g,
+                    "<br>"
+                );
+            return html;
+        }
+        /* =====================================================
+           INICIAR CHAT
+        ===================================================== */
+        document.addEventListener(
+            "DOMContentLoaded",
+            function() {
+                agregarMensaje(
+                    "Hola. Soy Tu Camino IA.\n\n" +
+                    "Podés preguntarme sobre carreras, " +
+                    "tecnicaturas, cursos, oficios y " +
+                    "opciones de estudio.",
+                    "ia"
+                );
+                const formulario =
+                    document.getElementById(
+                        "chat-form"
+                    );
+                if (!formulario) {
+                    return;
+                }
+                formulario.addEventListener(
+                    "submit",
+                    function(event) {
+                        event.preventDefault();
+                        enviarPregunta();
+                    }
+                );
+            }
+        );
+        /* =====================================================
+           ENVIAR PREGUNTA
+        ===================================================== */
+        async function enviarPregunta() {
+            const input =
+                document.getElementById(
+                    "chat-input"
+                );
+            const boton =
+                document.getElementById(
+                    "chat-submit"
+                );
+            const status =
+                document.getElementById(
+                    "chat-status"
+                );
+            if (!input || !boton) {
+                return;
+            }
+            const pregunta =
+                input.value.trim();
+            if (!pregunta) {
+                return;
+            }
+            /* Mostrar pregunta */
+            agregarMensaje(
+                pregunta,
+                "usuario"
+            );
+            /* Guardar */
+            historialChat.push({
+                rol:
+                    "Estudiante",
+                mensaje:
+                    pregunta
+            });
+            /* Limpiar */
+            input.value =
+                "";
+            boton.disabled =
+                true;
+            boton.textContent =
+                "Pensando...";
+            if (status) {
+                status.textContent =
+                    "Tu Camino IA está preparando una respuesta...";
+            }
+            /* =================================================
+               CONTEXTO
+            ================================================= */
+            let contexto = `
+Sos "Tu Camino IA", un asistente de orientación educativa
+para estudiantes de secundaria.
+Tu objetivo es ayudar a los estudiantes a explorar:
+- carreras universitarias
+- tecnicaturas
+- cursos
+- oficios
+- profesorados
+- áreas de estudio
+- posibles salidas laborales
+Respondé en español.
+Usá un lenguaje claro, sencillo y amigable.
+No decidas por el estudiante.
+Ayudalo a comparar posibilidades.
+Cuando la pregunta sea sobre Tucumán,
+utilizá la información local disponible en tu base.
+No inventes instituciones, carreras, precios,
+fechas de inscripción, requisitos o duración.
+Si un dato no está confirmado, indicá que
+debe verificarse directamente con la institución.
+Cuando compares instituciones, usá una tabla
+simple y fácil de leer.
+Cuando expliques una carrera, organizá la respuesta
+con títulos claros.
+Historial reciente:
+`;
+            historialChat
+                .slice(-8)
+                .forEach(
+                    function(item) {
+                        contexto +=
+                            "\n" +
+                            item.rol +
+                            ": " +
+                            item.mensaje;
+                    }
+                );
+            contexto += `
+Pregunta actual:
+${pregunta}
+`;
+            /* =================================================
+               CONECTAR CON CLOUDFLARE
+            ================================================= */
+            try {
+                const respuesta =
+                    await fetch(
+                        URL_IA,
+                        {
+                            method:
+                                "POST",
+                            headers: {
+                                "Content-Type":
+                                    "application/json"
+                            },
+                            body:
+                                JSON.stringify({
+                                    pregunta:
+                                        contexto
+                                })
+                        }
+                    );
+                const textoRespuesta =
+                    await respuesta.text();
+                let datos;
+                try {
+                    datos =
+                        JSON.parse(
+                            textoRespuesta
+                        );
+                }
+                catch {
+                    throw new Error(
+                        "El servidor devolvió una respuesta inesperada."
+                    );
+                }
+                if (!respuesta.ok) {
+                    console.error(
+                        "Error del Worker:",
+                        datos
+                    );
+                    throw new Error(
+                        datos.error ||
+                        "No se pudo conectar con la IA."
+                    );
+                }
+                if (
+                    !datos.respuesta
+                ) {
+                    throw new Error(
+                        "Gemini no devolvió una respuesta."
+                    );
+                }
+                /* Mostrar IA */
+                agregarMensaje(
+                    datos.respuesta,
+                    "ia"
+                );
+                /* Guardar */
+                historialChat.push({
+                    rol:
+                        "Tu Camino IA",
+                    mensaje:
+                        datos.respuesta
+                });
+                if (status) {
+                    status.textContent =
+                        "";
+                }
+            }
+            catch (error) {
+                console.error(
+                    "Error completo:",
+                    error
+                );
+                agregarMensaje(
+                    "No pude conectarme con la IA.\n\n" +
+                    "Error: " +
+                    error.message,
+                    "ia"
+                );
+                if (status) {
+                    status.textContent =
+                        "Revisá la conexión con el asistente.";
+                }
+            }
+            finally {
+                boton.disabled =
+                    false;
+                boton.textContent =
+                    "Enviar";
+                input.focus();
+            }
+        }
+    </script>
+</body>
+</html>
